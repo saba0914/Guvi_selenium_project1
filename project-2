@@ -1,0 +1,431 @@
+#TC-1
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+driver = webdriver.Chrome()
+url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+driver.get(url)
+driver.maximize_window()
+time.sleep(4)
+username_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
+username = driver.find_element(by=By.XPATH, value=username_xpath)
+username.send_keys("Admin")
+password_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
+password = driver.find_element(by=By.XPATH, value=password_xpath)
+password.send_keys("admin123")
+login_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
+login = driver.find_element(by=By.XPATH, value=login_xpath)
+login.click()
+time.sleep(10)
+
+search_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input"
+search = driver.find_element(by=By.XPATH, value=search_xpath)
+search.send_keys("admin")
+admin_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li/a"
+admin = driver.find_element(by=By.XPATH, value=admin_xpath)
+admin.click()
+time.sleep(5)
+
+search1_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input"
+search1 = driver.find_element(by=By.XPATH, value=search1_xpath)
+search1.send_keys("pim")
+pim_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li/a"
+pim = driver.find_element(by=By.XPATH, value=pim_xpath)
+pim.click()
+time.sleep(5)
+
+search1_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input"
+search1 = driver.find_element(by=By.XPATH, value=search1_xpath)
+search1.send_keys("leave")
+leave_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li/a"
+leave = driver.find_element(by=By.XPATH, value=leave_xpath)
+leave.click()
+time.sleep(5)
+
+search1_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input"
+search1 = driver.find_element(by=By.XPATH, value=search1_xpath)
+search1.send_keys("time")
+tim_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li/a"
+tim = driver.find_element(by=By.XPATH, value=tim_xpath)
+tim.click()
+time.sleep(5)
+
+search1_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input"
+search1 = driver.find_element(by=By.XPATH, value=search1_xpath)
+search1.send_keys("recruitment")
+rec_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li/a/span"
+rec = driver.find_element(by=By.XPATH, value=rec_xpath)
+rec.click()
+time.sleep(5)
+
+search1_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input"
+search1 = driver.find_element(by=By.XPATH, value=search1_xpath)
+search1.send_keys("my info")
+myinfo_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li/a/span"
+myinfo = driver.find_element(by=By.XPATH, value=myinfo_xpath)
+myinfo.click()
+time.sleep(5)
+
+search1_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input"
+search1 = driver.find_element(by=By.XPATH, value=search1_xpath)
+search1.send_keys("performance")
+performance_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li/a/span"
+performance = driver.find_element(by=By.XPATH, value=performance_xpath)
+performance.click()
+time.sleep(5)
+
+search1_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input"
+search1 = driver.find_element(by=By.XPATH, value=search1_xpath)
+search1.send_keys("dashboard")
+das_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li/a/span"
+das = driver.find_element(by=By.XPATH, value=das_xpath)
+das.click()
+time.sleep(5)
+
+search1_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input"
+search1 = driver.find_element(by=By.XPATH, value=search1_xpath)
+search1.send_keys("maintenance")
+maint_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li/a/span"
+maint = driver.find_element(by=By.XPATH, value=maint_xpath)
+maint.click()
+time.sleep(5)
+passwor_xpath = "/html/body/div/div[1]/div[1]/form/div[3]/div/div[2]/input"
+passwor = driver.find_element(by=By.XPATH, value=passwor_xpath)
+passwor.send_keys("admin123")
+
+log_xpath = "/html/body/div/div[1]/div[1]/form/div[4]/button[2]"
+log = driver.find_element(by=By.XPATH, value=log_xpath)
+log.click()
+time.sleep(10)
+
+search1_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/div/div/input"
+search1 = driver.find_element(by=By.XPATH, value=search1_xpath)
+search1.send_keys("buzz")
+buz_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li/a/span"
+buz = driver.find_element(by=By.XPATH, value=buz_xpath)
+buz.click()
+time.sleep(5)
+
+#TC-3
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
+url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+driver.get(url)
+driver.maximize_window()
+time.sleep(4)
+username_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
+username = driver.find_element(by=By.XPATH, value=username_xpath)
+username.send_keys("Admin")
+password_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
+password = driver.find_element(by=By.XPATH, value=password_xpath)
+password.send_keys("admin123")
+login_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
+login = driver.find_element(by=By.XPATH, value=login_xpath)
+login.click()
+time.sleep(10)
+
+pim_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a"
+pim = driver.find_element(by=By.XPATH, value=pim_xpath)
+pim.click()
+time.sleep(5)
+
+add_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[1]/button"
+add = driver.find_element(by=By.XPATH, value=add_xpath)
+add.click()
+time.sleep(4)
+
+fname_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[1]/div[2]/input"
+fname = driver.find_element(by=By.XPATH, value=fname_xpath)
+fname.send_keys("sab")
+time.sleep(4)
+
+rbutton_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[2]/div/label/span"
+rbutton = driver.find_element(by=By.XPATH, value=rbutton_xpath)
+rbutton.click()
+time.sleep(4)
+
+uname_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[3]/div/div[1]/div/div[2]/input"
+uname = driver.find_element(by=By.XPATH, value=uname_xpath)
+uname.send_keys("sabarirr")
+time.sleep(3)
+
+lname_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/input"
+lname = driver.find_element(by=By.XPATH, value=lname_xpath)
+lname.send_keys("rraj")
+time.sleep(3)
+
+pwrd_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[4]/div/div[1]/div/div[2]/input"
+pwrd = driver.find_element(by=By.XPATH, value=pwrd_xpath)
+pwrd.send_keys("Sha@@123")
+time.sleep(3)
+
+ppwrd_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[1]/div[2]/div[4]/div/div[2]/div/div[2]/input"
+ppwrd = driver.find_element(by=By.XPATH, value=ppwrd_xpath)
+ppwrd.send_keys("Sha@@123")
+time.sleep(3)
+
+save_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/form/div[2]/button[2]"
+save = driver.find_element(by=By.XPATH, value=save_xpath)
+save.click()
+time.sleep(4)
+
+#TC-4
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
+url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+driver.get(url)
+driver.maximize_window()
+time.sleep(4)
+username_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
+username = driver.find_element(by=By.XPATH, value=username_xpath)
+username.send_keys("Admin")
+password_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
+password = driver.find_element(by=By.XPATH, value=password_xpath)
+password.send_keys("admin123")
+login_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
+login = driver.find_element(by=By.XPATH, value=login_xpath)
+login.click()
+time.sleep(10)
+
+pim_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a"
+pim = driver.find_element(by=By.XPATH, value=pim_xpath)
+pim.click()
+time.sleep(5)
+
+sab_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div/div[49]/div"
+sab = driver.find_element(by=By.XPATH, value=sab_xpath)
+sab.click()
+time.sleep(4)
+
+pd_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[1]/a"
+pd = driver.find_element(by=By.XPATH, value=pd_xpath)
+pd.click()
+time.sleep(2)
+
+cd_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[2]/a"
+cd = driver.find_element(by=By.XPATH, value=cd_xpath)
+cd.click()
+time.sleep(2)
+
+ec_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[3]/a"
+ec = driver.find_element(by=By.XPATH, value=ec_xpath)
+ec.click()
+time.sleep(2)
+
+#TC-5
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
+url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+driver.get(url)
+driver.maximize_window()
+time.sleep(4)
+username_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
+username = driver.find_element(by=By.XPATH, value=username_xpath)
+username.send_keys("Admin")
+password_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
+password = driver.find_element(by=By.XPATH, value=password_xpath)
+password.send_keys("admin123")
+login_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
+login = driver.find_element(by=By.XPATH, value=login_xpath)
+login.click()
+time.sleep(10)
+
+pim_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a"
+pim = driver.find_element(by=By.XPATH, value=pim_xpath)
+pim.click()
+time.sleep(5)
+
+sab_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div/div[49]/div"
+sab = driver.find_element(by=By.XPATH, value=sab_xpath)
+sab.click()
+time.sleep(4)
+
+pd_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[1]/a"
+pd = driver.find_element(by=By.XPATH, value=pd_xpath)
+pd.click()
+time.sleep(2)
+
+gen_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/label/span"
+gen = driver.find_element(by=By.XPATH, value=gen_xpath)
+gen.click()
+time.sleep(2)
+
+sa_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[5]/button"
+sa = driver.find_element(by=By.XPATH, value=sa_xpath)
+sa.click()
+time.sleep(1)
+
+#TC-6
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
+url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+driver.get(url)
+driver.maximize_window()
+time.sleep(4)
+username_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
+username = driver.find_element(by=By.XPATH, value=username_xpath)
+username.send_keys("Admin")
+password_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
+password = driver.find_element(by=By.XPATH, value=password_xpath)
+password.send_keys("admin123")
+login_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
+login = driver.find_element(by=By.XPATH, value=login_xpath)
+login.click()
+time.sleep(10)
+
+pim_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a"
+pim = driver.find_element(by=By.XPATH, value=pim_xpath)
+pim.click()
+time.sleep(5)
+
+sab_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div/div[49]/div"
+sab = driver.find_element(by=By.XPATH, value=sab_xpath)
+sab.click()
+time.sleep(4)
+
+pd_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[1]/a"
+pd = driver.find_element(by=By.XPATH, value=pd_xpath)
+pd.click()
+time.sleep(2)
+
+cd_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[2]/a"
+cd = driver.find_element(by=By.XPATH, value=cd_xpath)
+cd.click()
+time.sleep(2)
+
+st_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[1]/div/div[2]/input"
+st = driver.find_element(by=By.XPATH, value=st_xpath)
+st.send_keys("raj nagar")
+
+ct_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[3]/div/div[2]/input"
+ct = driver.find_element(by=By.XPATH, value=ct_xpath)
+ct.send_keys("Chennai")
+
+sta_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[4]/div/div[2]/input"
+sta = driver.find_element(by=By.XPATH, value=sta_xpath)
+sta.send_keys("Tamilnadu")
+
+savve_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[4]/button"
+savve = driver.find_element(by=By.XPATH, value=savve_xpath)
+savve.click()
+
+#TC-7
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
+url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+driver.get(url)
+driver.maximize_window()
+time.sleep(4)
+username_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
+username = driver.find_element(by=By.XPATH, value=username_xpath)
+username.send_keys("Admin")
+password_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
+password = driver.find_element(by=By.XPATH, value=password_xpath)
+password.send_keys("admin123")
+login_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
+login = driver.find_element(by=By.XPATH, value=login_xpath)
+login.click()
+time.sleep(10)
+
+pim_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a"
+pim = driver.find_element(by=By.XPATH, value=pim_xpath)
+pim.click()
+time.sleep(5)
+
+sab_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div/div[49]/div"
+sab = driver.find_element(by=By.XPATH, value=sab_xpath)
+sab.click()
+time.sleep(4)
+
+pd_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[1]/a"
+pd = driver.find_element(by=By.XPATH, value=pd_xpath)
+pd.click()
+time.sleep(2)
+
+ec_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[3]/a"
+ec = driver.find_element(by=By.XPATH, value=ec_xpath)
+ec.click()
+time.sleep(2)
+
+ad_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/div/button"
+ad = driver.find_element(by=By.XPATH, value=ad_xpath)
+ad.click()
+time.sleep(2)
+
+na_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[1]/div/div[2]/input"
+na = driver.find_element(by=By.XPATH, value=na_xpath)
+na.send_keys("raj")
+time.sleep(2)
+
+rel_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[2]/div/div[2]/input"
+rel = driver.find_element(by=By.XPATH, value=rel_xpath)
+rel.send_keys("father")
+time.sleep(1)
+
+ph_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[2]/div/div[3]/div/div[2]/input"
+ph = driver.find_element(by=By.XPATH, value=ph_xpath)
+ph.send_keys("1234567890")
+time.sleep(2)
+
+sav_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[3]/button[2]"
+sav = driver.find_element(by=By.XPATH, value=sav_xpath)
+sav.click()
+time.sleep(1)
+
+#TC-8
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
+url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+driver.get(url)
+driver.maximize_window()
+time.sleep(4)
+username_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input"
+username = driver.find_element(by=By.XPATH, value=username_xpath)
+username.send_keys("Admin")
+password_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input"
+password = driver.find_element(by=By.XPATH, value=password_xpath)
+password.send_keys("admin123")
+login_xpath = "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button"
+login = driver.find_element(by=By.XPATH, value=login_xpath)
+login.click()
+time.sleep(10)
+
+pim_xpath = "/html/body/div/div[1]/div[1]/aside/nav/div[2]/ul/li[2]/a"
+pim = driver.find_element(by=By.XPATH, value=pim_xpath)
+pim.click()
+time.sleep(5)
+
+sab_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div/div[49]/div"
+sab = driver.find_element(by=By.XPATH, value=sab_xpath)
+sab.click()
+time.sleep(4)
+
+dep_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[1]/div[2]/div[4]/a"
+dep = driver.find_element(by=By.XPATH, value=dep_xpath)
+dep.click()
+time.sleep(2)
+
+na_xpath = "/html/body/div/div[1]/div[2]/div[2]/div/div/div/div[2]/div[1]/form/div[1]/div/div[1]/div/div[2]/input"
+na = driver.find_element(by=By.XPATH, value=dep_xpath)
+na.click()
